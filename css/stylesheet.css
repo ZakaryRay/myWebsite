@@ -1,0 +1,114 @@
+/*----------Font----------*/
+
+@font-face {
+    font-family: lexend;
+    src: url(../font/Lexend-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: kachika;
+    src: url(/font/KACHIKA.ttf);
+}
+
+/*----------Body----------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: lexend;
+    background-color: #fafafa;
+
+    width: 100%;
+}
+
+/*----------Header----------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background-color: #151e3f;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 20px;
+    font-family: kachika;
+    padding-top: 5px;
+}
+
+header h1 a:hover {
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #efa106;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: #efa106;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.selected {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*----------Footer----------*/
+
+footer {
+    border-top: #151e3f 1px solid;
+    margin: 10px 20px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+}
+
+/*----------Banner----------*/
+
+.banner {
+    background-color: #858786;
+    padding: 300px 20px;
+    background-image: url(../img/bannerbg.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.banner p {
+    font-size: 25px;
+    margin: 0;
+}
