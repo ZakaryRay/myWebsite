@@ -112,3 +112,17 @@ footer p {
     font-size: 25px;
     margin: 0;
 }
+
+/*---------Dicegame----------*/
+.dice-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dice-flex input {
+    margin: 0;
+}
+
+.dice-flex p {
+    font-size: 2rem;
+}
