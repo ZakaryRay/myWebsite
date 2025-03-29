@@ -25,12 +25,12 @@
                 <p>Les règles sont simples.</p>
                 <ul>
                     <li>6 dés sont requis</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Dé 5 = 50 points</li>
+                    <li>Dé 1 = 100 points</li>
+                    <li>3 dés 1 = 300 points</li>
+                    <li>3 dés 2 = 200 points, ainsi de suite.</li>
+                    <li>500 points sont requis pour ouvrir la partie.</li>
+                    <li>À partir de 2500 points les vols sont permis.</li>
                     <li></li>
                 </ul>
             </section>
@@ -38,32 +38,36 @@
             <section class="container dice-flex">
                 <div class="dice">
                     <input type="checkbox" />
-                    <p id="numOne">1</p>
+                    <p id="numOne" class="diceValue">-</p>
                 </div>
                 <div class="dice">
                     <input type="checkbox" />
-                    <p id="numTwo">2</p>
+                    <p id="numTwo" class="diceValue">-</p>
                 </div>
                 <div class="dice">
                     <input type="checkbox" />
-                    <p id="numThree">3</p>
+                    <p id="numThree" class="diceValue">-</p>
                 </div>
                 <div class="dice">
                     <input type="checkbox" />
-                    <p id="numFour">4</p>
+                    <p id="numFour" class="diceValue">-</p>
                 </div>
                 <div class="dice">
                     <input type="checkbox" />
-                    <p id="numFive">5</p>
+                    <p id="numFive" class="diceValue">-</p>
                 </div>
                 <div class="dice">
                     <input type="checkbox" />
-                    <p id="numSix">6</p>
+                    <p id="numSix" class="diceValue">-</p>
                 </div>
+            </section>
+            <section class="diceBtn">
+                <button id="throwDiceBtn">Lancer les dés!</button>
             </section>
         </main>
         <footer class="container">
             <p>Créé et géré par Zakary Raymond.</p>
         </footer>
+        <script src="javascript/script.js"></script>
     </body>
 </html>

@@ -119,10 +119,40 @@ footer p {
     justify-content: space-between;
 }
 
-.dice-flex input {
-    margin: 0;
+.dice {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
 }
 
-.dice-flex p {
+.dice p {
+    color: #151e3f;
     font-size: 2rem;
+    margin: 0;
+    padding: 20px 15px;
+    background-color: #efa106;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.diceBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.diceBtn button {
+    padding: 20px;
+    width: 40%;
+    background-color: #151e3f;
+    color: #efa106;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: lexend;
+}
+
+.diceBtn button:hover {
+    background-color: #efa106;
+    color: #151e3f;
 }
