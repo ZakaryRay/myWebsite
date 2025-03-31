@@ -1,29 +1,16 @@
 const throwDiceBtn = document.getElementById("throwDiceBtn");
 const diceValue = document.getElementsByClassName("diceValue");
-const diceOne = document.getElementById("numOne");
-const diceTwo = document.getElementById("numtwo");
-const diceThree = document.getElementById("numThree");
-const diceFour = document.getElementById("numFour");
-const diceFive = document.getElementById("numFive");
-const diceSix = document.getElementById("numSix");
-
-let dices = {};
 
 throwDiceBtn.addEventListener("click", () => {
-    dices = {
-        diceOne: generateRandomNumberOneToSix(),
-        diceTwo: generateRandomNumberOneToSix(),
-        diceThree: generateRandomNumberOneToSix(),
-        diceFour: generateRandomNumberOneToSix(),
-        diceFive: generateRandomNumberOneToSix(),
-        diceSix: generateRandomNumberOneToSix(),
-    };
-    displayDiceOne(generateRandomNumberOneToSix());
-    console.log(dices.diceOne);
+    displayDices();
 });
 
-const displayDiceOne = (randomNum) => {
-    diceOne.innerText = dices.diceOne;
+const displayDices = () => {
+    let diceValue = document.querySelectorAll(".dice .diceValue");
+
+    diceValue.forEach((dice, index) => {
+        dice.innerText = generateRandomNumberOneToSix();
+    });
 };
 
 const generateRandomNumberOneToSix = () => {
