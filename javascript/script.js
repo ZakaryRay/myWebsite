@@ -2,14 +2,23 @@ const throwDiceBtn = document.getElementById("throwDiceBtn");
 const diceValue = document.getElementsByClassName("diceValue");
 
 throwDiceBtn.addEventListener("click", () => {
-    displayDices();
+    displayDicesAndVerifyIfChecked();
 });
 
-const displayDices = () => {
-    let diceValue = document.querySelectorAll(".dice .diceValue");
+const displayDicesAndVerifyIfChecked = () => {
+    const diceValue = document.querySelectorAll(".dice .diceValue");
 
-    diceValue.forEach((dice, index) => {
+    let dice = diceValue.forEach((dice) => {
         dice.innerText = generateRandomNumberOneToSix();
+        return dice.innerText;
+    });
+
+    const checkBoxes = document.querySelectorAll(".dice input");
+
+    checkBoxes.forEach((box, index) => {
+        if (box.checked) {
+            console.log(`box number ${index + 1} checked : `);
+        }
     });
 };
 

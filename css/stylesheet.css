@@ -23,12 +23,11 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: lexend;
-    background-color: #fafafa;
 
-    width: 100%;
+    background: #378196;
+    background: linear-gradient(180deg, #329cb9, #8fcadd 50%);
+    background-attachment: fixed;
 }
 
 /*----------Header----------*/
@@ -36,123 +35,27 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 30px;
-    background-color: #151e3f;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
-}
-
-header li {
-    margin: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    align-items: center;
+    color: azure;
 }
 
 header h1 {
-    font-size: 20px;
-    font-family: kachika;
-    padding-top: 5px;
+    margin-left: 50px;
 }
 
-header h1 a:hover {
-    text-decoration: none;
+header ul {
+    margin-right: 50px;
 }
 
-header a {
-    text-decoration: none;
-    color: #efa106;
-}
-
-header a:visited {
-    text-decoration: none;
-    color: #efa106;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
-.selected {
-    font-weight: bold;
-    text-decoration: underline;
+header li {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 /*----------Footer----------*/
-
 footer {
-    border-top: #151e3f 1px solid;
-    margin: 10px 20px;
-}
-
-footer p {
+    margin-top: 100px;
     text-align: center;
-    font-size: 10px;
-}
-
-/*----------Banner----------*/
-
-.banner {
-    background-color: #858786;
-    padding: 300px 20px;
-    background-image: url(../img/bannerbg.JPEG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.banner h2 {
-    margin: 0;
-    font-size: 35px;
-}
-
-.banner p {
-    font-size: 25px;
-    margin: 0;
-}
-
-/*---------Dicegame----------*/
-.dice-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.dice {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-}
-
-.dice p {
-    color: #151e3f;
-    font-size: 2rem;
-    margin: 0;
-    padding: 20px 15px;
-    background-color: #efa106;
-    border-radius: 7px;
-    text-align: center;
-}
-
-.diceBtn {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.diceBtn button {
-    padding: 20px;
-    width: 40%;
-    background-color: #151e3f;
-    color: #efa106;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    font-family: lexend;
-}
-
-.diceBtn button:hover {
-    background-color: #efa106;
-    color: #151e3f;
+    color: azure;
 }
